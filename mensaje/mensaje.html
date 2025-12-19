@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Ti ❤️</title>
+
+  <!-- PREVISUALIZACIÓN EN WHATSAPP -->
+  <meta property="og:title" content="Un mensaje especial para ti ❤️">
+  <meta property="og:description" content="Ábrelo… es algo que sale del corazón 💌">
+  <meta property="og:image" content="https://i.imgur.com/9yG6H0L.png">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+      padding: 45px;
+      border-radius: 25px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+      max-width: 420px;
+      z-index: 10;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    button {
+      margin-top: 25px;
+      background: #fff;
+      color: #ff4d6d;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.08);
+    }
+
+    /* CORAZONES */
+    .heart {
+      position: absolute;
+      bottom: -50px;
+      font-size: 22px;
+      animation: float 6s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Para ti ❤️</h1>
+    <p id="mensaje">
+      Desde que llegaste a mi vida, todo tiene más sentido.  
+      Gracias por existir, por tu sonrisa y por hacer mis días más bonitos.
+    </p>
+    <button onclick="mostrarAmor()">Toca aquí 💌</button>
+  </div>
